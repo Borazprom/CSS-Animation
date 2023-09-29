@@ -2,3 +2,30 @@
     margin: 0;
     padding: 0;
 }
+.grid.container {
+    display: grid;
+    grid-template-areas: 
+    "navegacion"
+    "busqueda"
+    "principal"
+    "footer";
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+}
+
+
+menu {
+    background-color: #001524;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+menu div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+menu div img {
+    width: 80px;
+    border-radius: 50px;
+}
