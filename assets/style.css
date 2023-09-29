@@ -9,23 +9,47 @@
     "busqueda"
     "principal"
     "footer";
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 15% 15% 1fr 15% ;
+    width: 100vw;
+    height: 100vh;
 }
 
-
-menu {
-    background-color: #001524;
+.navegacion {
+    grid-area: navegacion;
+    background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
-menu div {
+
+.navegacion div {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px
 }
-menu div img {
+
+.navegacion div img {
     width: 80px;
     border-radius: 50px;
+}
+.navegacion div p {
+    padding-left: 20px;
+}
+
+.navegacion nav {
+    
+}
+.busqueda {
+    grid-area: busqueda;
+}
+
+.principal {
+    grid-area: principal;
+}
+
+.footer {
+    grid-area: footer;
 }
