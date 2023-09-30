@@ -27,23 +27,21 @@ body {
     color: white;
     justify-content: space-between;
     align-items: center;
-    /* height: 100%; */
 }
-.navegacion div {
+.navegacion .titulo {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 15px
 }
-.navegacion div img {
+.navegacion .titulo img {
     width: 80px;
     border-radius: 50px;
 }
-.navegacion div h3 {
+.navegacion .titulo h3 {
     padding-left: 20px;
 }
-.navegacion .menus {
-    padding-right: 10px;
+.navegacion .menus .icono {
+    padding-right: 20px;
 }
 
 /* SECCION BUSQUEDA */
@@ -74,10 +72,10 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.principal .cards {
+.principal .card-paginas {
     gap: 15px;
 }
-.principal .cards .card {
+.principal .card-paginas .card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,15 +86,15 @@ body {
     border-radius: 5px;
     width: 310px;
 }
-.principal .cards .card img {
+.principal .card-paginas .card img {
     width: 300px;
 }
 
-.principal .cards .card p {
+.principal .card-paginas .card p {
     text-align: center;
 
 }
-.principal .cards .card button {
+.principal .card-paginas .card button {
     width: 100px;
     height: 40px;
     background-color: #e4d9a5;
