@@ -140,6 +140,7 @@ body {
         "navegacion busqueda"
         "navegacion principal"
         "navegacion principal"
+        "navegacion principal"
         "footer principal";
         grid-template-columns: 15% 1fr;
         height: 100%;
@@ -163,5 +164,14 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .footer {
+        padding: 20px;
+    }
+    .footer i {
+        padding-top: 10px;
+    }
+    .footer h3 {
+        text-align: center;
     }
 }
