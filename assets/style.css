@@ -10,10 +10,11 @@
     "principal"
     "footer";
     grid-template-rows: 15% 15% 1fr 15% ;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
 }
 
+/* SECCION NAVEGACION */
 .navegacion {
     grid-area: navegacion;
     background-color: black;
@@ -23,14 +24,12 @@
     align-items: center;
     height: 100%;
 }
-
 .navegacion div {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px
 }
-
 .navegacion div img {
     width: 80px;
     border-radius: 50px;
@@ -38,18 +37,66 @@
 .navegacion div p {
     padding-left: 20px;
 }
-
 .navegacion nav {
-    
+    padding-right: 10px;
 }
+
+/* SECCION BUSQUEDA */
 .busqueda {
     grid-area: busqueda;
+    background-color: #D6CC99;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+.busqueda p {
+    padding: 5px;
+    font-size: 20px;
+}
+.busqueda select {
+    width: 350px;
+    padding: 10px;
+    border-radius: 7px;
+}
+/* SECCION PRINCIPAL */
 .principal {
     grid-area: principal;
+    background: #F1EFEF ;
+    display: flex;
+    flex-direction: column;
+}
+.principal .card {
+    border: solid 1px rgb(212, 210, 210);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 30px;
+    gap: 10px;
+    border-radius: 5px;
+}
+.principal .card img {
+    width: 300px;
 }
 
+.principal .card p {
+
+}
+.principal .card button {
+    width: 100px;
+    height: 40px;
+    background-color: #e4d9a5;
+    border: none;
+    border-radius: 5px;
+}
+
+/* PIE DE PAGINA */
 .footer {
     grid-area: footer;
+    background-color: rgb(18, 17, 17);
+    color: white;
 }
