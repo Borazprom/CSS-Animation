@@ -99,4 +99,12 @@
     grid-area: footer;
     background-color: rgb(18, 17, 17);
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+.footer .iconos i {
+    margin: 10px;
 }
