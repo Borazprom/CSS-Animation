@@ -142,21 +142,26 @@ body {
         "navegacion principal"
         "footer principal";
         grid-template-columns: 15% 1fr;
-        height: 100vh;
-        
-    }
-    .navegacion nav .icono {
-        display: none;
+        height: 100%;
     }
     .navegacion{
         display: flex;
         flex-direction: column;
+        justify-content: start;
     }
-    .principal {
-        
+    .navegacion .menus .icono {
+        display: none;
+    }
+    .navegacion .menus .menu {
+        text-align: center;
+        margin: 10px;
+    }
+    .navegacion .menus .menu p {
+        padding: 10px;
     }
     .principal .cards {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
