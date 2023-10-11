@@ -87,11 +87,21 @@ body {
     gap: 10px;
     border-radius: 5px;
     width: 300px;
+    overflow: hidden;
+
 }
 .principal .cards .card img {
     width: 300px;
     border: solid 1px rgb(211, 211, 211);
+   object-fit: cover;
+   transition:  0.80s;
 }
+.principal .cards .card img:hover {
+    object-fit: cover;
+    width: 100%;
+    transform: scale(1.1);
+}
+
 .principal .cards .card p {
     text-align: center;
     font-size: 20px;
@@ -103,7 +113,14 @@ body {
     border: none;
     border-radius: 5px;
     font-size: 15px;
+    transition: transform 1s ;
 }
+.principal .cards .card button:hover {
+    transform: scale(1.1);
+    background-color: #7e712e;
+    color: white;
+}
+
 .principal .paginas {
     margin: 40px;
 }
@@ -126,7 +143,9 @@ body {
 .footer .iconos i {
     margin: 10px;
 }
-
+.footer .iconos a {
+    color: #F1EFEF;
+}
 @media (max-width: 576px) {
     .navegacion nav .menu {
         display: none;
