@@ -39,7 +39,33 @@ body {
 }
 .navegacion .titulo h3 {
     padding-left: 20px;
+    animation: colorear 8s linear infinite alternate;
 }
+@keyframes colorear {
+    0% {
+       color:  #610C9F;
+    }
+    15% {
+        color: #219C90;
+    }
+    30% {
+        color: #DA0C81;
+    }
+    50% {
+        color: #FF4B91;
+    }
+    75% {
+        color: #FFB000;
+    }
+    90% {
+        color: #BCA37F;
+    }
+    100% {
+        : #79AC78;
+    }
+
+}
+
 .navegacion .menus .icono {
     padding-right: 20px;
 }
